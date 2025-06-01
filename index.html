@@ -1,124 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Мой сайт</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #eef2f3;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>О нас</title>
+<style>
+    body {
+        font-family:'Arial', sans-serif; 
+        background-color:#eef2f3; 
+        margin:0; 
+        padding:0; 
+        line-height:auto; 
+    }
+    header {
+        background-color:#4CAF50; 
+        color:white; 
+        padding:20px; 
+        text-align:center; 
+    }
+    nav {
+        background-color:#333; 
+    }
+    nav ul {
+        list-style:none; 
+        margin:auto; 
+        padding:none; 
+        display:flex; 
+        justify-content:center; 
+    }
+    nav ul li {margin:auto;}
+    nav ul li a{
+      color:white; 
+      text-decoration:none; 
+      font-weight:bold; 
+      padding :14px 20px ; display:block;}
+      
+      nav ul li a:hover {background-color:#575757;border-radius :4px;}
+      
+      main{
+          max-width :1000px;margin:auto;padding :20px;background:#ffffffcc;border-radius :10px;box-shadow :0 4px8px rgba(0,0,0,0.1);}
+          
+          h2 {color:#333;}
+          p {font-size :18px;}
+          
+          footer{
+              text-align:center;padding :15 px ;background:#333;color:white;margin-top :40 px;}
+</style></head><body>
 
-        /* Шапка сайта */
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
+<header><h1>О нас</h1></header>
 
-        /* Навигация */
-        nav {
-            background-color: #333;
-        }
+<nav><ul><li><a href="main.html">Главная</a></li><li><a href="about.html">О нас</a></li></ul></nav>
 
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
+<main><h2>Информация о сайте</h2><p>Этот сайт создан для демонстрации переходов между страницами.</p></main>
 
-        nav ul li {
-            margin: 0 15px;
-        }
+<footer>&copy;2024 Никита Парфенов. Все права защищены.</footer>
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 14px 20px;
-            display: block;
-        }
-
-        nav ul li a:hover {
-            background-color: #575757;
-            border-radius: 4px;
-        }
-
-        /* Основной контент */
-        main {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #ffffffcc; /* полупрозрачный белый */
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            font-size: 18px;
-        }
-
-        /* Стиль для изображений */
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-            border-radius: 10px;
-        }
-
-        /* Подвал сайта */
-        footer {
-            text-align: center;
-            padding: 15px 0;
-            background-color: #333;
-            color: white;
-            margin-top: 40px;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Добро пожаловать на мой сайт!</h1>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="#main">Главная</a></li>
-        <li><a href="#about">О нас</a></li>
-    </ul>
-</nav>
-
-<main>
-    <!-- Раздел "Главная" -->
-    <section id="main">
-        <h2>Главная страница</h2>
-        <p>Это главная страница нашего сайта. Здесь вы можете найти основную информацию и посмотреть пример изображения.</p>
-        <img src="https://m.nkj.ru/upload/iblock/b7b/b7b192da776da8baf496921cf1442a91.jpg" alt="Пример изображения" />
-    </section>
-
-    <!-- Раздел "О нас" -->
-    <section id="about" style="margin-top:40px;">
-        <h2>О нас</h2>
-        <p>Этот сайт создан для демонстрации простого и красивого дизайна. Мы стараемся делать наши страницы удобными и приятными для просмотра.</p>
-    </section>
-</main>
-
-<footer>
-    &copy; 2024 Никита Парфенов. Все права защищены.
-</footer>
-
-</body>
-</html>
+</body></html>
