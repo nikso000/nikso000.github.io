@@ -1,77 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Мой первый сайт</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f8ff;
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        header {
-            text-align: center;
-            background-color: #4CAF50;
-            padding: 20px;
-            border-radius: 10px;
-            color: white;
-        }
-        h1 {
-            margin-top: 0;
-        }
-        section {
-            margin-top: 30px;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-        }
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-style: italic;
-            color: #555;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Мой первый сайт — Космос</title>
+<style>
+    /* Общий стиль тела */
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.6;
+        background: linear-gradient(135deg, #2c003e, #4b0082); /* Фиолетовый градиент */
+        color: #fff;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    /* Звездное небо с мерцанием */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-image: radial-gradient(white 1px, transparent 1px);
+        background-size: 20px 20px;
+        opacity: 0.4;
+        animation: twinkleStars 60s linear infinite;
+        z-index: -1;
+    }
+
+    @keyframes twinkleStars {
+        from {background-position: 0 0;}
+        to {background-position: 10000px 10000px;}
+    }
+
+    /* Заголовок шапки */
+    header {
+        text-align: center;
+        background-color: rgba(75, 0, 130, 0.8); /* Фиолетовая полупрозрачность */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+
+    header h1 {
+        margin-top: 0;
+        font-family:'Orbitron', sans-serif; /* футуристический шрифт (можно подключить) */
+        font-size: 2em;
+    }
+
+    header p {
+        font-style: italic;
+    }
+
+    /* Секции */
+    section {
+        margin-top: 30px;
+        background-color: rgba(75,0,130,0.6); /* полупрозрачный фиолетовый фон */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: inset 0 0 10px rgba(255,255,255,0.2);
+    }
+
+    section h2 {
+        color: #e0b3ff; /* светло-фиолетовый цвет заголовка */
+        text-shadow: 1px 1px 3px #000; /* тень для читаемости */
+    }
+
+    p {
+        font-size:18px;
+    }
+
+    /* Изображение проекта */
+    img {
+        display:block;
+        margin:auto;
+        max-width:100%;
+        height:auto;
+        border-radius:10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+
+    /* Подвал сайта */
+    footer {
+        text-align:center;
+        margin-top:40px;
+        font-style:none; 
+        color:#ccc; 
+            font-family:'Arial', sans-serif; 
+            font-size :14px; 
+            padding :15px; 
+            background-color:#3a006f; /* темный фиолетовый фон для футера */
+            border-radius :10px; 
+            box-shadow : inset 0 -2px 5px rgba(255,255,255,0.2);
+            margin-bottom:-10px
+}
+</style>
+<!-- Можно подключить футуристический шрифт -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> -->
 </head>
 <body>
 
 <header>
-    <h1>Добро пожаловать на мой первый сайт!</h1>
-    <p>Создано с любовью и интересом к программированию и дизайну</p>
+<h1>Добро пожаловать в космос!</h1>
+<p>Создано с любовью и интересом к вселенной</p>
 </header>
 
 <section>
-    <h2>Об авторе</h2>
-    <p>Меня зовут Никита Парфенов, мне всего лишь 13 лет, но я уже увлечён созданием сайтов и программированием. Этот сайт — мой проект для учебы и самовыражения.</p>
-    <p>Я создал его в рамках курса в лучшей академии "TOP", где меня научили многому важному — дизайну, робототехнике, программированию, созданию игр и сайтов.</p>
-    <p>Мне было очень интересно учиться новым навыкам и реализовывать свои идеи. Надеюсь, вам понравится мой сайт!</p>
+<h2>Об авторе</h2>
+<p>Меня зовут Никита Парфенов, мне всего лишь 13 лет. Я люблю изучать космос и создавать сайты в стиле галактик и звездных систем.</p>
+<p>Этот сайт — мой первый шаг в мир веб-дизайна и космических приключений!</p>
 </section>
 
 <section>
-    <h2>Мой проект</h2>
-    <p>Этот сайт — мой первый шаг в мир веб-разработки. Я использовал HTML и немного CSS для оформления. В будущем планирую добавлять больше функций и делать его ещё красивее.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpWfQSCBxFGa-4nkDoNbkZ3VdadZqxl3FgpA&s" alt="Мой проект" />
+<h2>Мой проект</h2>
+<p>Это мой первый сайт в космическом стиле! Я использовал HTML и CSS для оформления и добавил звездное небо.</p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpWfQSCBxFGa-4nkDoNbkZ3VdadZqxl3FgpA&s" alt="Мой проект" />
 </section>
 
 <footer>
-    <p>Спасибо за внимание! Надеюсь, вам понравился мой сайт :)</p>
+<p>Спасибо за внимание! Надеюсь, вам понравился мой космический сайт :)</p>
 </footer>
 
 </body>
